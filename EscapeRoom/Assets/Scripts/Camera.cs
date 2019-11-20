@@ -20,9 +20,9 @@ public class Camera : MonoBehaviour
         float x = Input.GetAxis("Mouse X") * sensitivity;
         y = Mathf.Clamp(y, -45.0f, 45.0f);
 
-        transform.localEulerAngles += new Vector3(y, x, 0);
-        if (transform.localEulerAngles.x > 45 && transform.localEulerAngles.x < 90) transform.localEulerAngles = new Vector3(45f, transform.localEulerAngles.y, 0);
-        if (transform.localEulerAngles.x < 315 && transform.localEulerAngles.x > 90) transform.localEulerAngles = new Vector3(315, transform.localEulerAngles.y, 0);
+        transform.eulerAngles += new Vector3(y, x, 0);
+        if (transform.eulerAngles.x > 45 && transform.eulerAngles.x < 90) transform.eulerAngles = new Vector3(45f, transform.eulerAngles.y, 0);
+        if (transform.eulerAngles.x < 315 && transform.eulerAngles.x > 90) transform.eulerAngles = new Vector3(315, transform.eulerAngles.y, 0);
 
     }
 }

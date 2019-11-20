@@ -22,6 +22,7 @@ public class InteractionScript : MonoBehaviour
         {
                 Debug.DrawRay(c.position, transform.TransformDirection(c.forward)  * hit.distance, Color.red);
         }
+        Debug.Log(transform.localEulerAngles);
 
 
         //int layerMask = 1 << 8;

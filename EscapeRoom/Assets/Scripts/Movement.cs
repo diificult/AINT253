@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+    public Transform camera;
 
 
     public Vector3 velocity;
@@ -23,7 +24,7 @@ public class Movement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        Vector3 movement = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+        Vector3 movement = camera.transform.right * Input.GetAxis("Horizontal") + camera.transform.forward * Input.GetAxis("Vertical");
         c.Move(movement * speed * Time.deltaTime);
         velocity.y += -9.81f * Time.deltaTime;
         c.Move(velocity *Time.deltaTime);
