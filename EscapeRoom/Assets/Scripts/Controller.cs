@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,8 +10,10 @@ public class Controller : MonoBehaviour
 {
 
     public pickupItem pickup;
+    
     public void Hit()
     {
+        Debug.Log("Hit");
         pickup.Invoke("Controller");
         enabled = false;
     }
