@@ -9,11 +9,10 @@ public class pickupItem : UnityEvent<string> { }
 public class Controller : MonoBehaviour
 {
 
-  //  public UnityEvent pickupItem;
+    public pickupItem pickup;
     public void Hit()
     {
-       // pickupItem.Invoke("Controller");
-        Invoke(pickupItem, "Controller");
+        pickup.Invoke("Controller");
         enabled = false;
     }
 }
