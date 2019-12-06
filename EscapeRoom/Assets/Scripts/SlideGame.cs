@@ -5,6 +5,7 @@ using UnityEngine;
 public class SlideGame : MonoBehaviour
 {
     public GameObject[] sliders;
+    public GameObject invisible;
 
     private void OnEnable()
     {

@@ -10,8 +10,14 @@ public class Location : MonoBehaviour
     [SerializeField]
     private Text number;
 
+   
+
+
     private void OnEnable()
     {
         
     }
+
+   
+    
 }

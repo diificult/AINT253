@@ -5,11 +5,10 @@ using UnityEngine;
 public class Console : MonoBehaviour
 {
 
-    public inventory i;
 
-    public void Hit()
+    public void Hit(string inv)
     {
-        if (i.getHandItem().Equals("Controller"))
+        if (inv.Equals("Controller"))
         {
 
         }

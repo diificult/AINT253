@@ -11,10 +11,13 @@ public class Controller : MonoBehaviour
 
     public pickupItem pickup;
     
-    public void Hit()
+    public void Hit(string inv)
     {
-        Debug.Log("Hit");
-        pickup.Invoke("Controller");
-        enabled = false;
+        if (inv.Equals(""))
+        {
+            Debug.Log("Hit");
+            pickup.Invoke("Controller");
+            Destroy(this.transform.gameObject);
+        }
     }
 }
