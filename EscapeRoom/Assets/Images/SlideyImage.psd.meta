@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: 8399f18fe7f0ba74495558b358b58feb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1516240169565408470
+    second: SlideyImage_0
+  - first:
+      213: 1872030143065257523
+    second: SlideyImage_1
+  - first:
+      213: 7605949568983153541
+    second: SlideyImage_2
+  - first:
+      213: 5425781814426447783
+    second: SlideyImage_3
+  - first:
+      213: 1805628749890781951
+    second: SlideyImage_4
+  - first:
+      213: 1109136809806240479
+    second: SlideyImage_5
+  - first:
+      213: 2447072787629872060
+    second: SlideyImage_6
+  - first:
+      213: -3522303804155552007
+    second: SlideyImage_7
+  - first:
+      213: -913767235223281456
+    second: SlideyImage_8
+  - first:
+      213: -4001211965717352449
+    second: SlideyImage_9
+  - first:
+      213: -4530770848559031878
+    second: SlideyImage_10
+  - first:
+      213: 1345132535162114389
+    second: SlideyImage_11
+  - first:
+      213: 7900202491760533355
+    second: SlideyImage_12
+  - first:
+      213: 8604285774923791445
+    second: SlideyImage_13
+  - first:
+      213: -6759788718687547816
+    second: SlideyImage_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SlideyImage_2
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2850
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3178b232bf443e84395e291f2aa8c29e
+      internalID: 7605949568983153541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_3
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 2850
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dad1a3d18e18724db328fafcfb50060
+      internalID: 5425781814426447783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_4
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 2850
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e73761eb301014ea0e8b73d961fe79
+      internalID: 1805628749890781951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_7
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1700
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a484b0d769df552498d9bdab9d45490d
+      internalID: -3522303804155552007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_8
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1700
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d203e4a5ed8754042a0d710866689120
+      internalID: -913767235223281456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_9
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 1700
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cbf7982ddee3b4c9d7a59ce2660bc8
+      internalID: -4001211965717352449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_12
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 550
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dafd6ce4dc3ac468e5d1d0be04614b
+      internalID: 7900202491760533355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlideyImage_14
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 550
+        width: 1150
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0ee0fedd44cb4458e7aa885dddae2b
+      internalID: -6759788718687547816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f42aa226b6ce2ef4489f08cf60cdcd7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
