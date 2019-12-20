@@ -32,7 +32,14 @@ public class SlideGame : MonoBehaviour
         solution = new GameObject[,] {{sliders[0], sliders[4], sliders[7]},
                                             {sliders[1],sliders[5], sliders[6]},
                                             {sliders[2],invisible,sliders[3]}};
-    }
+        for (int y = 0; y < 3; y++)
+        {
+            for (int x = 0; x < 3; x++)
+            {
+                Debug.Log(map[x,y].name + ", x  "  +  x  + ",  y "  +y);
+            }
+        }
+            }
 
     public void Swap(GameObject swaping)
     {
@@ -50,9 +57,26 @@ public class SlideGame : MonoBehaviour
             invisible.GetComponent<RectTransform>().anchoredPosition = swapingPos;
             
         }
-
-        if (map == solution) Debug.Log("YOU WON");
+        bool isCorrect = check();
+        if (isCorrect) Debug.Log("YOU WON");
         else Debug.Log(map[0,0].name + " " + map[1,0].name + " " + map[2,0].name + "\n " + map[0, 1].name + " " + map[1, 1].name + " " + map[2, 1].name + " \n" + map[0, 2].name + " " + map[1, 2].name + " " + map[2, 2].name);
+    }
+
+    private bool check()
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int x = 0; x < 3; x++)
+            {
+                if (map[x, y] != solution[x, y]) {
+                    Debug.Log("Not the  solution from::" + x + "," + y  + "  Maps " + map[x,y] +  " solution " + solution[x,y]);
+                    return false;
+                    
+                }
+                
+            }
+        }
+        return true;
     }
 
     public int[] GetLocation(GameObject find)
