@@ -21,7 +21,7 @@ public class Camera : MonoBehaviour
         y = Mathf.Clamp(y, -45.0f, 45.0f);
 
         transform.eulerAngles += new Vector3(y, x, 0);
-        if (transform.eulerAngles.x > 35 && transform.eulerAngles.x < 90) transform.eulerAngles = new Vector3(35f, transform.eulerAngles.y, 0);
+        if (transform.eulerAngles.x > 55 && transform.eulerAngles.x < 90) transform.eulerAngles = new Vector3(55f, transform.eulerAngles.y, 0);
         if (transform.eulerAngles.x < 305 && transform.eulerAngles.x > 90) transform.eulerAngles = new Vector3(305, transform.eulerAngles.y, 0);
 
     }
