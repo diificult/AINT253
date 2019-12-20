@@ -37,6 +37,7 @@ public class SlideGame : MonoBehaviour
             for (int x = 0; x < 3; x++)
             {
                 Debug.Log(map[x,y].name + ", x  "  +  x  + ",  y "  +y);
+                Debug.Log(solution[x, y].name + ", x  " + x + ",  y " + y);
             }
         }
             }
@@ -68,7 +69,8 @@ public class SlideGame : MonoBehaviour
         {
             for (int x = 0; x < 3; x++)
             {
-                if (map[x, y] != solution[x, y]) {
+                //For some reason solution's y and x is switched 
+                if (map[x, y] != solution[y, x]) {
                     Debug.Log("Not the  solution from::" + x + "," + y  + "  Maps " + map[x,y] +  " solution " + solution[x,y]);
                     return false;
                     
