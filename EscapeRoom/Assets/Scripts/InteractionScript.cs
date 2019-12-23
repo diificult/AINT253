@@ -28,6 +28,7 @@ public class InteractionScript : MonoBehaviour
             if (Physics.Raycast(c.position, transform.TransformDirection(c.forward), out hit, 100f))
             {
                 Debug.Log(hit.transform.gameObject.layer);
+                Debug.DrawRay(c.position, transform.TransformDirection(c.forward)* hit.distance, Color.red);
                 Debug.Log("Yeah 2!");
 
                 if (hit.transform.gameObject.layer == 10)

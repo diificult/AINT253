@@ -16,7 +16,10 @@ public class LockPuzzle : MonoBehaviour
         if (usercode == solution)
         {
             Debug.Log("Solution Found");
+            transform.parent.gameObject.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
-
+        
     }
 }
