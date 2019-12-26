@@ -7,6 +7,10 @@ public class SlideGame : MonoBehaviour
     public GameObject[,] map = new GameObject[3, 3];
     public GameObject[,] solution;
 
+    public GameObject ConsoleLight;
+
+    public Material GreenLight;
+
     void OnEnable()
     {
 
@@ -59,8 +63,15 @@ public class SlideGame : MonoBehaviour
             
         }
         bool isCorrect = check();
-        if (isCorrect) Debug.Log("YOU WON");
-        else Debug.Log(map[0,0].name + " " + map[1,0].name + " " + map[2,0].name + "\n " + map[0, 1].name + " " + map[1, 1].name + " " + map[2, 1].name + " \n" + map[0, 2].name + " " + map[1, 2].name + " " + map[2, 2].name);
+        if (isCorrect)
+        {
+            Debug.Log("YOU WON");
+            ConsoleLight.GetComponent<Light>().color = Color.green;
+            ConsoleLight.GetComponent<Renderer>().material = GreenLight;
+            gameObject.SetActive(false);
+        }
+        
+        else Debug.Log(map[0, 0].name + " " + map[1, 0].name + " " + map[2, 0].name + "\n " + map[0, 1].name + " " + map[1, 1].name + " " + map[2, 1].name + " \n" + map[0, 2].name + " " + map[1, 2].name + " " + map[2, 2].name);
     }
 
     private bool check()
