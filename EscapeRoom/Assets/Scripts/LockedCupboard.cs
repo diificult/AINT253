@@ -27,6 +27,7 @@ public class LockedCupboard : MonoBehaviour
 
     public void Hit(string inv)
     {
+        Debug.Log("oof");
         if (!inPuzzle && !puzzleScript.solved)
         {
             lockPuzzle.SetActive(true);

@@ -25,7 +25,7 @@ public class InteractionScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Yeah 1!");
-            if (Physics.Raycast(c.position, transform.TransformDirection(c.forward), out hit, 100f))
+            if (Physics.Raycast(c.position, transform.TransformDirection(c.forward), out hit, 1.5f))
             {
                 Debug.Log(hit.transform.gameObject.layer);
                 Debug.DrawRay(c.position, transform.TransformDirection(c.forward)* hit.distance, Color.red);
