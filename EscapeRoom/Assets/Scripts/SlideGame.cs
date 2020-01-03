@@ -8,6 +8,7 @@ public class SlideGame : MonoBehaviour
     public GameObject[,] solution;
 
     public GameObject ConsoleLight;
+    public GameObject TVText;
 
     public Material GreenLight;
 
@@ -68,6 +69,7 @@ public class SlideGame : MonoBehaviour
             Debug.Log("YOU WON");
             ConsoleLight.GetComponent<Light>().color = Color.green;
             ConsoleLight.GetComponent<Renderer>().material = GreenLight;
+            TVText.SetActive(true);
             gameObject.SetActive(false);
         }
         
