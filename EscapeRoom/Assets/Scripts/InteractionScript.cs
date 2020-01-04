@@ -38,7 +38,7 @@ public class InteractionScript : MonoBehaviour
                 }
                 
             }
-            Debug.DrawRay(c.position, transform.TransformDirection(c.forward), Color.red);
+            Debug.DrawRay(c.position, transform.TransformDirection(c.forward) *1.5f, Color.red, 100f);
 
         }
 

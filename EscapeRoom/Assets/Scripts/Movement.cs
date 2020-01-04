@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
        // Debug.Log(velocity);
         if(Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            velocity.y = Mathf.Sqrt(1f * -9.81f *-2f);
+            velocity.y = Mathf.Sqrt(-9.81f *-2f);
         }
         
     }
