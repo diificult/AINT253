@@ -7,6 +7,7 @@ public class LightSwitch : MonoBehaviour
     public GameObject LightOff;
     public Light light;
     private int state = 0;
+    public GameObject Code;
 
     public void Hit(string inv)
     {
@@ -15,6 +16,7 @@ public class LightSwitch : MonoBehaviour
             LightOff.SetActive(false);
             LightOn.SetActive(true);
             light.enabled = true;
+            Code.SetActive(true);
             state = 1;
         }
         else
@@ -22,6 +24,7 @@ public class LightSwitch : MonoBehaviour
             LightOff.SetActive(true);
             LightOn.SetActive(false);
             light.enabled = false;
+            Code.SetActive(false);
             state = 0;
         }
     }
