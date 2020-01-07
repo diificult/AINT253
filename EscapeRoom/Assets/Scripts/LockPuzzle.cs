@@ -13,6 +13,8 @@ public class LockPuzzle : MonoBehaviour
     public GameObject Camera;
     [SerializeField]
     private string solution = "2976";
+
+    public  AudioSource audio;
     public void CheckCode()
     {
         string usercode = "";
@@ -34,7 +36,7 @@ public class LockPuzzle : MonoBehaviour
             solved = true;
             cupboard.GetComponent<Animator>().SetTrigger("OpenDoor");
             transform.parent.gameObject.SetActive(false);
-
+            audio.Play();
         }
 
     }

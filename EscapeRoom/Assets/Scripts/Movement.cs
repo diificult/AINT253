@@ -28,6 +28,18 @@ public class Movement : MonoBehaviour
         c.Move(movement * speed * Time.deltaTime);
         velocity.y += -9.81f * Time.deltaTime;
         c.Move(velocity *Time.deltaTime);
+        AudioSource clip = groundCheck.GetComponent<AudioSource>();
+        if (grounded && movement.magnitude > 0.5)
+        {
+            
+            if (!clip.isPlaying)
+            {
+                clip.Play();
+            }
+        } else
+        {
+           // clip.Stop();
+        }
        // Debug.Log(velocity);
         if(Input.GetKeyDown(KeyCode.Space) && grounded)
         {
