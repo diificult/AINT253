@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class LockPuzzle : MonoBehaviour
 {
 
     public GameObject[] digits = new GameObject[4];
 
-    public GameObject cupboard;
+    public GameObject target;
 
     public bool solved = false;
     public GameObject Player;
     public GameObject Camera;
+    public Text text;
     [SerializeField]
     private string solution = "2976";
 
@@ -28,16 +30,28 @@ public class LockPuzzle : MonoBehaviour
 
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-         //   cupboard.GetComponent<Rigidbody>().AddForce(Vector3.up * 10f);
-        //    cupboard.GetComponent<Rigidbody>().AddForce(Vector3.forward * 10f);
-        //    cupboard.GetComponent<Rigidbody>().AddForce(Vector3.right * 10f);
             Player.GetComponent<Movement>().enabled = true;
             Camera.GetComponent<CameraControl>().enabled = true;
             solved = true;
-            cupboard.GetComponent<Animator>().SetTrigger("OpenDoor");
+            target.GetComponent<Animator>().SetTrigger("OpenDoor");
             transform.parent.gameObject.SetActive(false);
             audio.Play();
+            try
+            {
+                text.text = "Hey, that door is opening!";
+                text.gameObject.SetActive(true);
+                Invoke("RemoveText", 3f);
+            } catch (Exception e)
+            {
+
+            }
         }
 
     }
+
+    private void RemoveText()
+    {
+        text.gameObject.SetActive(false);
+    }
+
 }

@@ -11,7 +11,7 @@ public class SceneController : MonoBehaviour
     }
     public void EndGame()
     {
-        SceneManager.LoadScene("EndGame");
+        SceneManager.LoadScene("End Screen");
     }
 
     public void StartScreen()

@@ -10,6 +10,9 @@ public class SlideGame : MonoBehaviour
     public GameObject ConsoleLight;
     public GameObject TVText;
 
+    public GameObject Player;
+    public GameObject Camera;
+
     public Material GreenLight;
 
     void OnEnable()
@@ -66,14 +69,16 @@ public class SlideGame : MonoBehaviour
         bool isCorrect = check();
         if (isCorrect)
         {
-            Debug.Log("YOU WON");
+           
             ConsoleLight.GetComponent<Light>().color = Color.green;
             ConsoleLight.GetComponent<Renderer>().material = GreenLight;
             TVText.SetActive(true);
             gameObject.SetActive(false);
+            Player.GetComponent<Movement>().enabled = true;
+            Camera.GetComponent<CameraControl>().enabled = true;
         }
         
-        else Debug.Log(map[0, 0].name + " " + map[1, 0].name + " " + map[2, 0].name + "\n " + map[0, 1].name + " " + map[1, 1].name + " " + map[2, 1].name + " \n" + map[0, 2].name + " " + map[1, 2].name + " " + map[2, 2].name);
+      //  else Debug.Log(map[0, 0].name + " " + map[1, 0].name + " " + map[2, 0].name + "\n " + map[0, 1].name + " " + map[1, 1].name + " " + map[2, 1].name + " \n" + map[0, 2].name + " " + map[1, 2].name + " " + map[2, 2].name);
     }
 
     private bool check()
@@ -84,7 +89,7 @@ public class SlideGame : MonoBehaviour
             {
                 //For some reason solution's y and x is switched 
                 if (map[x, y] != solution[y, x]) {
-                    Debug.Log("Not the  solution from::" + x + "," + y  + "  Maps " + map[x,y] +  " solution " + solution[x,y]);
+              //      Debug.Log("Not the  solution from::" + x + "," + y  + "  Maps " + map[x,y] +  " solution " + solution[x,y]);
                     return false;
                     
                 }

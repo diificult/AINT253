@@ -6,13 +6,13 @@ public class LockedCupboard : MonoBehaviour
 {
     public GameObject lockPuzzle;
 
-    private bool inPuzzle = false;
+    public bool inPuzzle = false;
 
     public LockPuzzle puzzleScript;
     public GameObject Player;
     public GameObject Camera;
 
-    private void Update()
+    private void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && inPuzzle )
         {
